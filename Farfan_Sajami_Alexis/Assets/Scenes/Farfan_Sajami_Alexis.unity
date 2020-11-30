@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 293888499}
   - component: {fileID: 293888498}
   m_Layer: 0
-  m_Name: Main Camera
+  m_Name: pelota Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -216,7 +216,7 @@ GameObject:
   - component: {fileID: 298363922}
   - component: {fileID: 298363921}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: suelo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -294,7 +294,7 @@ Transform:
   m_LocalScale: {x: 20, y: 1, z: 20}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &377715276
 GameObject:
@@ -309,7 +309,7 @@ GameObject:
   - component: {fileID: 377715278}
   - component: {fileID: 377715277}
   m_Layer: 0
-  m_Name: Cylinder
+  m_Name: Cilindro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -387,7 +387,7 @@ Transform:
   m_LocalScale: {x: 20, y: 20, z: 20}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &553199668
 GameObject:
@@ -401,8 +401,9 @@ GameObject:
   - component: {fileID: 553199671}
   - component: {fileID: 553199670}
   - component: {fileID: 553199669}
+  - component: {fileID: 553199673}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: Pelota
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -480,8 +481,22 @@ Transform:
   m_Children:
   - {fileID: 293888500}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &553199673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 553199668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14596b0a5e8c22f489141e4eff24f5f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myPrefab: {fileID: 0}
+  referenceObject: {fileID: 0}
 --- !u!1 &1144333156
 GameObject:
   m_ObjectHideFlags: 0
